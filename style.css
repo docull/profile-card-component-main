@@ -1,0 +1,34 @@
+body {
+    background-color: darkcyan;
+}
+
+.card-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -165px;
+    margin-left: -150px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    border: solid;
+    border-radius: 12px;
+    width: 300px;
+    height: 330px;
+}
+
+.card-wrapper .card-top img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 300px;
+}
+
+.card-wrapper .card-mid {
+    background-color: white;
+}
+
+.card-wrapper .card-bot {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
