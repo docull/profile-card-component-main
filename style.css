@@ -3,6 +3,7 @@ body {
 }
 
 .card-wrapper {
+    background-color: white;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -24,11 +25,32 @@ body {
 }
 
 .card-wrapper .card-mid {
-    background-color: white;
+    height: 135px;
 }
 
 .card-wrapper .card-bot {
-    background-color: white;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card-wrapper .card-bot .col-1 {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-wrapper .card-bot .col-2 {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-wrapper .card-bot .col-3 {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
