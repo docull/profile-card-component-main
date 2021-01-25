@@ -2,7 +2,9 @@ body {
     background-color: darkcyan;
 }
 
-.card-wrapper {
+.card-container {
+    /* This is a flexbox container containing 3 stacked rows:
+     "card-top", "card-mid" and "card-bot" */
     background-color: white;
     position: fixed;
     top: 50%;
@@ -12,45 +14,92 @@ body {
     display: flex;
     flex-direction: column;
     align-content: space-around;
-    border: solid;
     border-radius: 12px;
     width: 300px;
     height: 330px;
 }
+/* -------------------begin "card-top" section-------------------- */
+/* This centers the portrait photo */
+.card-container .card-top {
+    text-align: center;
+}
 
-.card-wrapper .card-top img {
+/* The blue background pattern for card */
+.card-container .card-top #pat {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     width: 300px;
 }
 
-.card-wrapper .card-mid {
+/*--Portrait photo --*/
+.card-container .card-top #por {
+    border: solid;
+    border-width: 6px;
+    border-color: white;
+    border-radius: 100%;
+    margin-top: -60px;
+}
+/*-------------------end "card-top" section---------------*/
+
+/*-----------------begin "card-mid" section-------------------*/
+/* Name and age text (general font styles and 
+height of mid section */
+.card-container .card-mid {
     height: 135px;
+    text-align: center;
+    font-family: "Kumbh Sans";
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: solid lightgrey;
 }
 
-.card-wrapper .card-bot {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+/* specific styles for age text */
+.card-container .card-mid .name-age span {
+    color: grey;
+    font-weight: normal;
+    padding-left: 6px;
 }
 
-.card-wrapper .card-bot .col-1 {
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* specific styles for place text */
+.card-container .card-mid .place {
+    margin-top: 6px;
+    font-size: 12px;
+    color: grey;
+}
+/*------------------end "card-mid" section-------------*/
+
+/*----------------begin "card-bot" section-------------*/
+.card-container .card-bot {
+    /* "card-bot" section uses CSS grid layout with 
+    3 columns and two rows format */
+    display:grid;
+    grid-template-columns: auto auto auto;
 }
 
-.card-wrapper .card-bot .col-2 {
-    background-color: yellow;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* first row containing 3 columns for numbers */
+.card-container .card-bot .num-item {
+    text-align: center;
+    font-family: "Kumbh Sans";
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 20px;
 }
 
-.card-wrapper .card-bot .col-3 {
-    background-color: green;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* second row containing 3 columns for text */
+.card-container .card-bot .text-item {
+    text-align: center;
+    font-family: "Kumbh Sans";
+    font-size: 10px;
+    color: grey;
+    padding-top: 6px;
+    padding-bottom: 20px;
+}
+/*-----------------end "card-bot" section--------------*/
+
+.attribution { 
+    font-size: 11px; text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
 }
