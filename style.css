@@ -1,5 +1,7 @@
 body {
-    background-color: darkcyan;
+    background-color: hsl(186, 80%, 60%);
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    /*background-position: :left top, right bottom;*/
 }
 
 .card-container {
@@ -97,6 +99,7 @@ height of mid section */
 /*-----------------end "card-bot" section--------------*/
 
 .attribution { 
+    position: relative;
     font-size: 11px; text-align: center;
 }
 
