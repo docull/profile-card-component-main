@@ -124,5 +124,6 @@ height of mid section */
 
     .card-container {
         position: absolute;
+        object-position: center;
     }
 }
