@@ -1,8 +1,16 @@
 body {
     background-color: hsl(185, 75%, 39%);
-    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
-    /*background-position: :left top, right bottom;*/
+    overflow: hidden;
 }
+
+#top-bub {
+    object-position: -550px -550px;
+}
+
+/* this second image giving me trouble, can't get it where I want it----
+#bot-bub {
+    object-position: 500px 550px;
+} */
 
 .card-container {
     /* This is a flexbox container containing 3 stacked rows:
@@ -105,4 +113,16 @@ height of mid section */
 
 .attribution a { 
     color: hsl(228, 45%, 44%);
+}
+
+
+/*--responsive--*/
+@media (max-width: 375px) {
+    body {
+        overflow-y: scroll;
+    }
+
+    .card-container {
+        position: absolute;
+    }
 }
