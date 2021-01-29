@@ -1,13 +1,17 @@
 body {
     background-color: hsl(185, 75%, 39%);
     overflow: hidden;
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-position: -260px -480px, 720px 350px;
+    background-repeat: no-repeat;
+    font-family: "Kumbh Sans";
 }
 
-#top-bub {
+/*#top-bub {
     object-position: -550px -550px;
 }
 
-/* this second image giving me trouble, can't get it where I want it----
+this second image giving me trouble, can't get it where I want it----
 #bot-bub {
     object-position: 500px 550px;
 } */
@@ -57,7 +61,7 @@ height of mid section */
 .card-container .card-mid {
     height: 135px;
     text-align: center;
-    font-family: "Kumbh Sans";
+    /*font-family: "Kumbh Sans";*/
     font-size: 18px;
     font-weight: 600;
     border-bottom: solid lightgrey;
@@ -89,7 +93,7 @@ height of mid section */
 /* first row containing 3 columns for numbers */
 .card-container .card-bot .num-item {
     text-align: center;
-    font-family: "Kumbh Sans";
+    /*font-family: "Kumbh Sans";*/
     font-weight: bold;
     font-size: 20px;
     padding-top: 20px;
@@ -98,7 +102,7 @@ height of mid section */
 /* second row containing 3 columns for text */
 .card-container .card-bot .text-item {
     text-align: center;
-    font-family: "Kumbh Sans";
+    /*font-family: "Kumbh Sans";*/
     font-size: 10px;
     color: grey;
     padding-top: 6px;
